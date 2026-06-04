@@ -16,15 +16,18 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Academic Event 2026",
-  description: "Offical acedemic event landing page for graduation ceremony",
+  description: "Official academic event landing page for graduation ceremony",
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     title: "Academic Event 2026",
     description: "Join the official graduation ceremony",
-    url: "",
+    url: "https://landingpage-hazel-gamma.vercel.app",
     siteName: "Academic Event",
     images: [
       {
-        url: "/logo.png",
+        url: "/ogimage.png",
         width: 1200,
         height: 630,
         alt: "Academic Event 2026",
