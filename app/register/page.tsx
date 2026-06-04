@@ -1,10 +1,11 @@
+import RegisterCard from "@/components/register/RegisterCard";
 
 
 function page() {
   return (
-    <div>
-      register
-    </div>
+    <main>
+      <RegisterCard/>
+    </main>
   )
 }
 

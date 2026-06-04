@@ -6,7 +6,7 @@ const GuestsSection = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center space-y-3 mb-12">
           <span className="text-sm font-semibold tracking-widest text-blue-600 uppercase">
-            Distinguished Guests
+           
           </span>
 
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">

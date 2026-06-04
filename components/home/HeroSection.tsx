@@ -1,6 +1,11 @@
 import Image from "next/image"
+type HeroProps = {
+    onRegister: () => void;
+}
+const HeroSection = ({ onRegister }: HeroProps) => {
+  
+  
 
-const HeroSection = () => {
   return (
     <section className="relative w-full min-h-[80vh] flex items-center">
       <Image
@@ -26,6 +31,7 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 justify-center md:justify-start">
               <button
                 type="button"
+                onClick={onRegister}
                 className="bg-white cursor-pointer text-black px-5 py-2 rounded-md font-medium hover:scale-105 active:scale-95 transition"
               >
                 Register Now
