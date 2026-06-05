@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { easeInOut, motion } from "motion/react";
 type HeroProps = {
     onRegister: () => void;
 }
@@ -16,19 +17,34 @@ const HeroSection = ({ onRegister }: HeroProps) => {
         sizes="100vw"
         priority
       />
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-black/70" />
       <div className="relative z-10 max-w-6xl mx-auto px-6 w-full">
         <div className="grid md:grid-cols-2 min-h-[80vh] items-center">
           <div className="space-y-6 max-w-xl text-center md:text-left mx-auto md:mx-0">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
+            <motion.h1
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ ease: easeInOut, delay: 1 }}
+              className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight"
+            >
               Celebrate Academic Excellence at Graduation Ceremony
-            </h1>
+            </motion.h1>
 
-            <p className="text-gray-200 text-sm sm:text-base">
+            <motion.p
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ ease: easeInOut, delay: 2 }}
+              className="text-gray-200 text-sm sm:text-base "
+            >
               Join students, faculty, and guests for a prestigious graduation
               ceremony celebrating academic achievements and milestones.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 justify-center md:justify-start">
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ ease: easeInOut, delay: 3 }}
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 justify-center md:justify-start"
+            >
               <button
                 type="button"
                 onClick={onRegister}
@@ -43,7 +59,7 @@ const HeroSection = ({ onRegister }: HeroProps) => {
               >
                 Learn More
               </button>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
