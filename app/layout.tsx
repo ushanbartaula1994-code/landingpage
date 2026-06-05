@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "Academic Event",
     images: [
       {
-        url: "/og-image.svg",
+        url: "https://landingpage-hazel-gamma.vercel.app/og-image.svg",
         width: 1200,
         height: 630,
         alt: "Academic Event 2026",
